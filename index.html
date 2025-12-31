@@ -23,6 +23,14 @@
             background: #000;
         }
 
+        /* Did You Know Section */
+        .did-you-know { background: #fff3cd; border: 1px solid #ffeeba; padding: 25px; border-radius: 15px; margin-bottom: 40px; }
+        .did-you-know h3 { margin-top: 0; color: #856404; display: flex; align-items: center; gap: 10px; }
+        .stats-row { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 15px; text-align: center; }
+        .stat-item { flex: 1; min-width: 150px; padding: 10px; }
+        .stat-value { display: block; font-size: 1.5em; font-weight: bold; color: var(--danger); }
+        .stat-label { font-size: 0.9em; color: #666; }
+
         .tagline { text-align: center; font-size: 1.3em; margin-bottom: 50px; font-weight: 500; }
         
         .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
@@ -30,20 +38,15 @@
         .feature-card:hover { transform: translateY(-5px); border-color: var(--primary); }
         .feature-card h3 { margin-top: 0; color: var(--dark); display: flex; align-items: center; gap: 10px; }
 
-        /* New Guarantee Section */
         .guarantee-bar { background: #f1f8f4; border: 2px solid var(--primary); padding: 30px; border-radius: 20px; margin: 40px 0; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; text-align: center; }
         .guarantee-item { flex: 1; min-width: 200px; }
         .guarantee-item h4 { margin: 10px 0 5px 0; color: var(--dark); }
-        .guarantee-item p { font-size: 0.9em; margin: 0; }
         
-        .android-only { background: #3DDC84; color: #073042; padding: 4px 12px; border-radius: 5px; font-weight: bold; font-size: 0.8em; vertical-align: middle; }
-
         .cta-box { text-align: center; margin-top: 60px; padding: 50px; background: #f1f8f4; border-radius: 25px; border: 2px dashed var(--primary); }
         .btn { display: inline-block; background: var(--primary); color: white; padding: 18px 40px; border-radius: 35px; text-decoration: none; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3); }
         
         footer { margin-top: 80px; text-align: center; border-top: 1px solid #eee; padding: 40px 0; font-size: 0.9em; color: #666; }
         footer a { color: #666; text-decoration: none; margin: 0 10px; }
-        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -51,13 +54,32 @@
 <header>
     <img src="cherry.png" alt="Cherry Picker Icon" class="logo-img">
     <span class="logo-text">Cherry Picker</span>
-    <p class="hero-subtitle">Maximize Every Mile <span class="android-only">ANDROID ONLY</span></p>
+    <p class="hero-subtitle">Maximize Every Mile <span style="background: #3DDC84; color: #073042; padding: 4px 12px; border-radius: 5px; font-size: 0.6em; vertical-align: middle;">ANDROID ONLY</span></p>
 </header>
 
 <div class="container">
     
     <div class="app-preview">
         <img src="screenshot.jpg" alt="Cherry Picker App Interface" class="screenshot">
+    </div>
+
+    <div class="did-you-know">
+        <h3>💡 Did You Know?</h3>
+        <p>The average driver loses <strong>over $0.65 per mile</strong> to hidden costs. If you aren't calculating your net profit, you might be paying to work.</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <span class="stat-value">$0.15 - $0.25</span>
+                <span class="stat-label">Fuel Cost / Mile</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">$0.09 - $0.12</span>
+                <span class="stat-label">Maintenance / Mile</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">$0.30 - $0.40</span>
+                <span class="stat-label">Depreciation / Mile</span>
+            </div>
+        </div>
     </div>
 
     <p class="tagline">Stop guessing. Start driving for profit with the ultimate Uber and Lyft offer intelligence tool.</p>
@@ -80,30 +102,29 @@
     <div class="feature-grid">
         <div class="feature-card">
             <h3>💰 Profit Analytics</h3>
-            <p>Instantly calculate <strong>$ Per Mile</strong> and <strong>$ Per Hour</strong> before you accept. Our color-coded system tells you immediately if a trip meets your goals.</p>
+            <p>Instantly calculate <strong>$ Per Mile</strong> and <strong>$ Per Hour</strong> before you accept. Cherry Picker highlights the best offers in green so you don't have to do the math.</p>
         </div>
 
         <div class="feature-card">
             <h3>🏠 Home-Link ETA</h3>
-            <p>Always know your distance from home. The app calculates how far an offer leaves you from your home/work address and highlights trips heading in your direction.</p>
+            <p>Always know your distance from home. The app calculates how far an offer leaves you from your target address and flags trips heading your way.</p>
         </div>
 
         <div class="feature-card">
             <h3>🚫 Smart No-Go Zones</h3>
-            <p>Define custom "Dead Zones" or areas you want to avoid. Cherry Picker alerts you if a trip destination falls into a restricted area based on your preferences.</p>
+            <p>Define custom "Dead Zones." Cherry Picker alerts you if a trip destination falls into an area where it's hard to get a ride back.</p>
         </div>
 
         <div class="feature-card">
             <h3>📍 Strategic Positioning</h3>
-            <p>Stop being "stranded." Filter trips that take you too far from your preferred zones, helping you stay in high-demand, high-profit areas.</p>
+            <p>Filter trips that leave you "stranded." Stay in high-demand areas and keep your wheels turning for money, not for free.</p>
         </div>
     </div>
 
     <div class="cta-box">
-        <h2>Start Your 3-Day Free Trial</h2>
-        <p>Full premium access. See the difference in your earnings before you pay a cent.</p>
+        <h2>Ready to Drive for Profit?</h2>
+        <p>Start your 3-day free trial today. No credit card required.</p>
         <a href="#" class="btn">Download Cherry Picker for Android</a>
-        <p style="margin-top: 20px; font-size: 0.9em; color: #666;">Secure activation via Lemon Squeezy license key.</p>
     </div>
 
     <footer>
