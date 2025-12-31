@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service | Cherry Picker</title>
     <style>
-        :root { --primary: #2ecc71; --dark: #1a1a1a; --light: #f8f9fa; }
+        :root { --primary: #2ecc71; --dark: #1a1a1a; --light: #f8f9fa; --danger: #e74c3c; }
         body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #fff; }
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         
@@ -14,11 +14,11 @@
         .logo-text { font-size: 2.5em; font-weight: bold; vertical-align: middle; }
         
         h2 { color: var(--dark); border-left: 4px solid var(--primary); padding-left: 15px; margin-top: 40px; }
-        .highlight-box { background: #f1f8f4; border-left: 4px solid var(--primary); padding: 20px; border-radius: 0 15px 15px 0; margin: 20px 0; }
+        .shield-box { background: #f1f8f4; border: 2px solid var(--primary); padding: 25px; border-radius: 15px; margin: 20px 0; }
+        .shield-box h3 { margin-top: 0; color: var(--dark); }
         
         footer { margin-top: 80px; text-align: center; border-top: 1px solid #eee; padding: 40px 0; font-size: 0.9em; color: #666; }
         footer a { color: var(--dark); text-decoration: none; font-weight: bold; }
-        footer a:hover { color: var(--primary); }
     </style>
 </head>
 <body>
@@ -30,29 +30,32 @@
 
 <div class="container">
     <h1>Terms of Service</h1>
-    <p>By installing and using the Cherry Picker application for Android, you agree to the following terms and conditions. These terms ensure a fair and secure experience for all professional drivers.</p>
+    <p>Last Updated: December 2024</p>
 
-    <div class="highlight-box">
-        <strong>Important:</strong> Cherry Picker is a professional utility tool. Your license is tied to your specific Android device to ensure security and prevent unauthorized sharing.
+    <div class="shield-box">
+        <h3>🛡️ The "No-Interference" Guarantee</h3>
+        <p>Cherry Picker is strictly a <strong>decision-support utility</strong>. To ensure your account safety and privacy:</p>
+        <ul>
+            <li><strong>No Automation:</strong> Cherry Picker never interacts with your phone's OS to accept, decline, or cancel trips. You retain 100% manual control.</li>
+            <li><strong>No "Call Home":</strong> The app does not transmit your trip data, location, or personal details to external servers. All calculations happen locally on your device.</li>
+            <li><strong>Passive Capture:</strong> The app only "reads" the offer data displayed by Uber and Lyft to perform math; it never "writes" or sends commands back to those apps.</li>
+        </ul>
     </div>
 
-    <h2>1. License & Device Binding</h2>
-    <p>Each subscription grants a license for <strong>one (1) unique Android device</strong>. We use a Hardware Identifier (HWID) to bind the license to your phone. Transferring a license to a new device is subject to our verification process.</p>
+    <h2>1. User Responsibility</h2>
+    <p>You are the pilot. Cherry Picker provides the data, but you make the decisions. We are not responsible for your acceptance rates, account standing with rideshare platforms, or traffic safety. Do not interact with the app while the vehicle is in motion.</p>
 
-    <h2>2. Subscription & 3-Day Trial</h2>
-    <p>We offer a <strong>3-day free trial</strong> to allow you to test all premium features. If you do not cancel before the trial ends, your chosen subscription plan will automatically begin through Lemon Squeezy.</p>
+    <h2>2. License & Device Binding</h2>
+    <p>Your license is tied to your specific Android device via Hardware ID (HWID). This is used strictly for subscription verification. One license equals one active device.</p>
 
-    <h2>3. Accuracy of Data</h2>
-    <p>Cherry Picker provides mathematical estimates based on third-party platform data (Uber/Lyft) and user-defined costs. We are not responsible for any discrepancies in final payouts or driving decisions made based on these calculations.</p>
+    <h2>3. Subscription & Trial</h2>
+    <p>Users receive a <strong>3-day free trial</strong>. After the trial, the subscription auto-renews monthly via Lemon Squeezy. You can cancel at any time to stop future billing.</p>
 
-    <h2>4. Refund Policy</h2>
-    <p>Because we provide a full-featured 3-day trial, <strong>refunds are generally not issued</strong> once a billing cycle has processed. You may cancel at any time to prevent future charges.</p>
-
-    <h2>5. Prohibited Use</h2>
-    <p>Users may not attempt to reverse-engineer, modify, or bypass the license verification system of Cherry Picker. Any such attempt will result in immediate license termination without refund.</p>
+    <h2>4. Service Limitations</h2>
+    <p>Cherry Picker provides mathematical estimates. While we aim for 100% accuracy, final payouts are determined by your rideshare platform. We do not guarantee specific income levels.</p>
 
     <footer>
-        <p>&copy; 2024 Cherry Picker. All rights reserved.</p>
+        <p>&copy; 2024 Cherry Picker. Built for Professional Drivers.</p>
         <p><a href="index.html">← Return to Home</a> | <a href="privacy.html">Privacy Policy</a></p>
     </footer>
 </div>
