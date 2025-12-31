@@ -3,77 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Driver Calculator | Maximize Every Uber & Lyft Mile</title>
+    <title>Cherry Picker | Smart Rideshare Offer Calculator for Android</title>
     <style>
-        :root { --primary: #2ecc71; --danger: #e74c3c; --dark: #2c3e50; --light: #ecf0f1; }
-        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: var(--dark); margin: 0; padding: 0; background: #fff; }
+        :root { --primary: #2ecc71; --danger: #e74c3c; --dark: #1a1a1a; --accent: #f1c40f; --light: #f8f9fa; }
+        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #fff; }
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        header { text-align: center; padding: 60px 20px; background: var(--dark); color: white; }
-        .hero-title { font-size: 2.5em; margin: 0; }
-        .hero-subtitle { font-size: 1.2em; color: var(--primary); font-weight: bold; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
-        .card { border: 1px solid #ddd; padding: 25px; border-radius: 12px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .card h3 { margin-top: 0; color: var(--dark); display: flex; align-items: center; }
+        header { text-align: center; padding: 80px 20px; background: var(--dark); color: white; }
+        .logo { font-size: 3em; margin: 0; }
+        .hero-subtitle { font-size: 1.4em; color: var(--primary); font-weight: bold; margin-top: 10px; }
         
-        .badge { display: inline-block; padding: 5px 12px; border-radius: 20px; background: var(--primary); color: white; font-size: 0.9em; margin-bottom: 10px; }
-        .cta-section { text-align: center; margin-top: 60px; padding: 40px; background: var(--light); border-radius: 20px; }
-        .btn { display: inline-block; background: var(--primary); color: white; padding: 15px 35px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: transform 0.2s; }
-        .btn:hover { transform: scale(1.05); }
+        .app-preview { text-align: center; margin: -50px auto 40px; }
+        .screenshot { 
+            max-width: 320px; 
+            border: 8px solid #333; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
+            background: #000;
+        }
+
+        .tagline { text-align: center; font-size: 1.3em; margin-bottom: 50px; font-weight: 500; }
         
-        footer { margin-top: 80px; text-align: center; border-top: 1px solid #eee; padding: 40px 0; font-size: 0.9em; }
-        a { color: var(--dark); text-decoration: underline; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .feature-card { border: 1px solid #eee; padding: 30px; border-radius: 15px; background: var(--light); transition: transform 0.2s; }
+        .feature-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .feature-card h3 { margin-top: 0; color: var(--dark); display: flex; align-items: center; gap: 10px; }
+        
+        .android-only { background: #3DDC84; color: #073042; padding: 4px 12px; border-radius: 5px; font-weight: bold; font-size: 0.8em; vertical-align: middle; }
+
+        .cta-box { text-align: center; margin-top: 60px; padding: 50px; background: #f1f8f4; border-radius: 25px; border: 2px dashed var(--primary); }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 18px 40px; border-radius: 35px; text-decoration: none; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3); }
+        
+        footer { margin-top: 80px; text-align: center; border-top: 1px solid #eee; padding: 40px 0; font-size: 0.9em; color: #666; }
+        footer a { color: #666; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 class="hero-title">Pro Driver Calculator</h1>
-    <p class="hero-subtitle">The Intelligence Layer for Professional Rideshare Drivers</p>
+    <div class="logo">🍒 Cherry Picker</div>
+    <p class="hero-subtitle">Maximize Every Mile <span class="android-only">ANDROID ONLY</span></p>
 </header>
 
 <div class="container">
-    <p style="text-align: center; font-size: 1.2em;">Stop guessing your profits. Our overlay gives you the <strong>real data</strong> you need to accept or decline trips in 3 seconds or less.</p>
+    
+    <div class="app-preview">
+        <img src="screenshot.jpg" alt="Cherry Picker App Interface" class="screenshot">
+    </div>
 
-    <div class="grid">
-        <div class="card">
-            <span class="badge">Profitability</span>
-            <h3>Real-Time Math</h3>
-            <p>Instantly see your <strong>Earnings Per Mile</strong> and <strong>Earnings Per Hour</strong>. We factor in your pickup time and total distance so you never take a loss-making trip again.</p>
+    <p class="tagline">Stop guessing. Start driving for profit with the ultimate Uber and Lyft offer intelligence tool.</p>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>💰 Profit Analytics</h3>
+            <p>Instantly calculate <strong>$ Per Mile</strong> and <strong>$ Per Hour</strong> before you accept. Our color-coded system tells you immediately if a trip meets your goals.</p>
         </div>
 
-        <div class="card">
-            <span class="badge">Navigation</span>
-            <h3>Home-Link Technology</h3>
-            <p>Always know exactly how far an offer takes you from home or work. Set your target destination and the app alerts you when a trip brings you closer to where you want to be.</p>
+        <div class="feature-card">
+            <h3>🏠 Home-Link ETA</h3>
+            <p>Always know your distance from home. The app calculates how far an offer leaves you from your home/work address and highlights trips heading in your direction.</p>
         </div>
 
-        <div class="card">
-            <span class="badge">Security</span>
-            <h3>Smart "No-Go" Zones</h3>
-            <p>Define custom areas you want to avoid. If a trip destination falls within your restricted zones, the app alerts you instantly before you accept.</p>
+        <div class="feature-card">
+            <h3>🚫 Smart No-Go Zones</h3>
+            <p>Define custom "Dead Zones" or areas you want to avoid. Cherry Picker alerts you if a trip destination falls into a restricted area based on your preferences.</p>
         </div>
 
-        <div class="card">
-            <span class="badge">Efficiency</span>
-            <h3>Virtual Dead-Zone Filter</h3>
-            <p>Use the app to stay within your preferred driving radius. Filter out trips that leave you "stranded" too far from profitable areas.</p>
+        <div class="feature-card">
+            <h3>📍 Strategic Positioning</h3>
+            <p>Stop being "stranded." Filter trips that take you too far from your preferred zones, helping you stay in high-demand, high-profit areas.</p>
         </div>
     </div>
 
-    <div class="cta-section">
-        <h2>Ready to drive smarter?</h2>
-        <p>Get full access to the Pro Driver Calculator for 3 days. No credit card required to start.</p>
-        <a href="#" class="btn">Start Your 3-Day Free Trial</a>
-        <p style="font-size: 0.8em; margin-top: 15px;">Available for Android & iOS. Secure activation via Lemon Squeezy.</p>
+    <div class="cta-box">
+        <h2>Start Your 3-Day Free Trial</h2>
+        <p>Full premium access. See the difference in your earnings before you pay a cent.</p>
+        <a href="#" class="btn">Download Cherry Picker for Android</a>
+        <p style="margin-top: 20px; font-size: 0.9em; color: #666;">Secure activation via Lemon Squeezy license key.</p>
     </div>
 
     <footer>
-        <p>&copy; 2024 Pro Driver Calculator. All rights reserved.</p>
+        <p>&copy; 2024 Cherry Picker. Built for Professional Drivers.</p>
         <p>
             <a href="privacy.html">Privacy Policy</a> | 
             <a href="terms.html">Terms of Service</a> | 
-            <a href="mailto:your-email@gmail.com">Contact Support</a>
+            <a href="mailto:your-email@gmail.com">Support</a>
         </p>
     </footer>
 </div>
