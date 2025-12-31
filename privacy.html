@@ -3,34 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Pro Driver Calculator</title>
+    <title>Privacy Policy | Cherry Picker</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #2c3e50; margin-top: 30px; }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #666; }
+        :root { --primary: #2ecc71; --dark: #1a1a1a; --light: #f8f9fa; }
+        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #fff; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        
+        header { text-align: center; padding: 60px 20px; background: var(--dark); color: white; }
+        .logo-img { width: 60px; height: auto; vertical-align: middle; margin-bottom: 10px; }
+        .logo-text { font-size: 2.5em; font-weight: bold; display: block; }
+        
+        h2 { color: var(--dark); border-left: 4px solid var(--primary); padding-left: 15px; margin-top: 40px; }
+        .last-updated { color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.9em; }
+        
+        .policy-card { background: var(--light); padding: 30px; border-radius: 15px; border: 1px solid #eee; margin-top: 20px; }
+        
+        footer { margin-top: 80px; text-align: center; border-top: 1px solid #eee; padding: 40px 0; font-size: 0.9em; color: #666; }
+        footer a { color: var(--dark); text-decoration: none; font-weight: bold; }
+        footer a:hover { color: var(--primary); }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy for Pro Driver Calculator</h1>
-    <p><strong>Last Updated:</strong> December 2025</p>
+<header>
+    <img src="cherry.png" alt="Cherry Picker Icon" class="logo-img">
+    <span class="logo-text">Cherry Picker</span>
+</header>
 
-    <h2>1. Data Collection</h2>
-    <p>We value your privacy. The only technical data we collect is a <strong>unique Hardware Identifier (HWID)</strong> from your device. This is used solely to activate and manage your software license. We do not collect your name, location, or trip data.</p>
+<div class="container">
+    <p class="last-updated">Last Updated: December 2024</p>
+    <h1>Privacy Policy</h1>
+    <p>At Cherry Picker, we are committed to providing professional rideshare drivers with powerful tools while maintaining the highest standards of data privacy. This policy outlines exactly how we handle your information.</p>
 
-    <h2>2. Payment Processing</h2>
-    <p>All payments are processed securely by <strong>Lemon Squeezy</strong>. We do not store or have access to your credit card or bank information.</p>
+    <div class="policy-card">
+        <h2>1. Data Collection & Licensing</h2>
+        <p>To provide secure license management, we collect a <strong>unique Hardware Identifier (HWID)</strong> from your Android device. This identifier is used exclusively to activate your subscription and prevent unauthorized use of your license key.</p>
 
-    <h2>3. Data Usage</h2>
-    <p>Your HWID is never sold, shared, or used for tracking purposes outside of verifying your subscription status.</p>
+        <h2>2. What We DO NOT Collect</h2>
+        <p>We believe your business data is yours alone. Cherry Picker does not collect, store, or transmit:</p>
+        <ul>
+            <li>Your real-time GPS location history.</li>
+            <li>Your passenger or trip details.</li>
+            <li>Your personal contact information or phone logs.</li>
+        </ul>
 
-    <h2>4. Contact</h2>
-    <p>For data inquiries, contact: <a href="mailto:robertgiambalvo@gmail.com">your-email@gmail.com</a></p>
+        <h2>3. Payment Security</h2>
+        <p>All financial transactions are handled securely by <strong>Lemon Squeezy</strong>, our Merchant of Record. Cherry Picker never sees or stores your credit card numbers, bank details, or billing addresses.</p>
 
-    <div class="footer">
-        <p><a href="index.html">← Back to Home</a></p>
+        <h2>4. Contact Us</h2>
+        <p>If you have questions regarding your data or license, please reach out to our support team at: <br>
+        <strong><a href="mailto:your-email@gmail.com" style="color: var(--primary);">your-email@gmail.com</a></strong></p>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Cherry Picker. All rights reserved.</p>
+        <p><a href="index.html">← Return to Home</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</div>
 
 </body>
 </html>
